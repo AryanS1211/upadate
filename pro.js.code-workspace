@@ -1,3 +1,25 @@
-{
-	"folders": []
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.querySelector(".container");
+    const popupText = document.querySelector(".popup-text");
+    let isPopupVisible = false;
+
+    function checkScrollPosition() {
+        const scrollPosition = window.scrollY;
+        const triggerPosition = container.offsetTop + 700; // Adjust this value as needed
+
+        if (scrollPosition >= triggerPosition && !isPopupVisible) {
+            popupText.style.display = "block";
+            isPopupVisible = true;
+        } else if (scrollPosition < triggerPosition && isPopupVisible) {
+            popupText.style.display = "none";
+            isPopupVisible = false;
+        }
+
+        requestAnimationFrame(checkScrollPosition);
+    }
+
+    window.addEventListener("scroll", checkScrollPosition);
+
+    // Initial check when the page loads
+    checkScrollPosition();
+});
