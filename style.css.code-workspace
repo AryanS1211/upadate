@@ -21,7 +21,7 @@ h1 {
     top: 100px;
     right: 350px;
     font-family: 'Sacramento', cursive;
-    color: #bdd3d3; 
+    color: #c7e9e9; 
 }
                                                /*div {
                                               background-color: #C7E9B0;
@@ -58,7 +58,7 @@ h1 {
     padding-top: 0px;                      
 }
  .middle-container{  
-   background-image: url("post.png");
+   background-image: url("depth.jpeg");
      background-repeat: no-repeat;
      max-width: 100%;
      height:auto;
@@ -66,18 +66,22 @@ h1 {
 
      height: 200vh; /* Make the container taller to enable scrolling */
    
-     padding: 20px;
+     padding: 10px;
      .popup-text {
       display: none; /* Initially hide the pop-up text */
       position: fixed;
       top: 50%; /* Position it in the middle vertically */
       left: 50%; /* Position it in the middle horizontally */
       transform: translate(-50%, -50%); /* Center it precisely */
-      background-color: #333;
-      color: #fff;
+      background-color: #3d484d;
+      color: #e2d9d9;
       padding: 10px;
       border-radius: 5px;
-      z-index: 999; /* Ensure the pop-up is on top of other content */
+    width: 70%; /* Increase the width as needed */
+    height:100%; /* Increase the height as needed */
+    font-size: 12px;
+    z-index: 999;
+     
   } 
  
 }
@@ -92,7 +96,8 @@ h1 {
     width: 20%;
 }
 h3{
-    color:#005e7e;
+    color:#d8e0e2;
+    padding-top: 5px;
 }
 .line{
     border-top-style: solid;
@@ -134,6 +139,7 @@ h2{
     float: left;
     margin: 20px;
     text-align: right;
+    padding-top:5px;
    
 }
 .css{
@@ -164,11 +170,12 @@ body {
   }
   
   .footer {
-    background-color: #333; /* Change this to your desired background color */
+    background-color: #1a1515; /* Change this to your desired background color */
     color: #fff; /* Change this to your desired text color */
     text-align:justify;
     padding: 20px 0; /* Add padding to the top and bottom for spacing */
     position: relative; /* Ensure proper positioning */
+    
   }
   
   /* Style for the left corner image */
