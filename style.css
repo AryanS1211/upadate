@@ -67,29 +67,38 @@ h1 {
      height: 200vh; /* Make the container taller to enable scrolling */
    
      padding: 10px;
-}
-.popup-text {
-  display: none; /* Initially hide the pop-up text */
-  position: fixed;
-  top: 50%; /* Position it in the middle vertically */
-  left: 50%; /* Position it in the middle horizontally */
-  transform: translate(-50%, -50%); /* Center it precisely */
-  background-color: #3d484d;
-  color: #e2d9d9;
-  padding: 10px;
-  border-radius: 5px;
-width: 70%; /* Increase the width as needed */
-height:100%; /* Increase the height as needed */
-font-size: 12px;
-z-index: 999;
+     .popup-text {
+      display: none; /* Initially hide the pop-up text */
+      position: fixed;
+      top: 50%; /* Position it in the middle vertically */
+      left: 50%; /* Position it in the middle horizontally */
+      transform: translate(-50%, -50%); /* Center it precisely */
+      background-color: #3d484d;
+      color: #e2d9d9;
+      padding: 10px;
+      border-radius: 5px;
+    width: 50%; /* Increase the width as needed */
+    height:100%; /* Increase the height as needed */
+    font-size: 12px;
+    
+   
+    line-height: 1.4;
+    
+  
+     
+  } 
  
-} 
+}
 .image{
     margin-top: 20px;
     height: 200px;
     width: 15%;
 }
-
+.labtop{
+    background-color: #F5F3C1; 
+    height: 150px;
+    width: 20%;
+}
 h3{
     color:#d8e0e2;
     padding-top: 5px;
@@ -143,7 +152,8 @@ h2{
     text-align:left
 }
 .pro{
-    margin: 70px auto 70px auto;
+    margin: 30px auto 30px auto;
+    scroll-padding-top:10px;
     
     text-align: justify;
 }
@@ -151,11 +161,12 @@ h2{
     text-align: justify; /* For Edge */
   
   text-align-last: right;
+  scroll-padding-top:5px;
  
 }
 .cssclass{
     text-align: center;
-    margin: 70px auto 70px auto;
+    margin: 30px auto 30px auto;
 }
 /*                                              F  o  o  t  e  r                                                */
 /* Reset default margin and padding for the body element */
@@ -170,7 +181,7 @@ body {
     text-align:justify;
     padding: 20px 0; /* Add padding to the top and bottom for spacing */
     position: relative; /* Ensure proper positioning */
-    z-index: 3;
+    
   }
   
   /* Style for the left corner image */
@@ -207,6 +218,7 @@ header {
     justify-content: space-between;
     align-items: center;
    /* border-bottom: 5px solid rgb(49, 221, 255); /* Add a dark blue border at the bottom */ 
+    position: fixed; /* Make the header fixed at the top */
     top: 0; /* Align the header to the top of the viewport */
     width: 100%; /* Make the header span the entire width of the viewport */
     z-index: 100; /* Ensure the header appears above other content */
@@ -242,7 +254,7 @@ nav a {
 
 /* Style the navigation links on hover */
 nav a:hover {
-    color: #007a88; /* Change the hover color to your preference */
+    color: #e1fcff; /* Change the hover color to your preference */
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 /*                                               D  R  O  P        D  O  W  N                                                                               */
@@ -283,7 +295,7 @@ nav a:hover {
 
 /* Change the background color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: rgba(76, 113, 119, 0.362);
+    background-color: rgba(0, 220, 254, 0.362);
 }
 
 /* Show the dropdown content when the dropdown button is hovered over */
@@ -466,5 +478,17 @@ nav a:hover {
     width: 100px; /* Adjust the sun's width as needed */
     z-index: 3; /* Ensure sun is behind clouds but above waves, birds, and fish */
   }
+  .scuba{
+    width:5%;
+    height:auto;
+    float: left;
+  }
+  .diver{
+    width:25%;
+    height: auto;
+   float:right;
+   bottom:10%;
+  }
 
   /*----------------------------------------------------------------------------------------------------*/
+
